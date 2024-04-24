@@ -2,9 +2,9 @@ from random import randrange
 import numpy as np
 
 #Exercice 1 :
-print('My Python Code Forever')
+#print('My Python Code Forever')
 
-print('My Python \nCode \nForever')
+#print('My Python \nCode \nForever')
 
 int_type=1
 float_type=1.5
@@ -20,10 +20,16 @@ null_type=None
 my42count='quarante-deux'
 print(len(my42count))
 
+#6
+myArray42=list("quarante-deux")
+
+#7
 
 
+#8
 
 
+#9
 
 #10
 my42Type=print(type(boolean_type).__name__)
