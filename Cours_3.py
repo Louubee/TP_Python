@@ -2,8 +2,21 @@ from datetime import datetime
 
 
 #Exercice 3:
-#1
 
+
+# 1 avec MAP 
+
+'''
+nombres=[1,2,3,5,8]
+
+def myfunc(a):
+    return [a * i for i in range(11)]
+ 
+print(list(map(myfunc, nombres)))
+
+
+
+# 1 sans MAP 
 liste=[]
 list_nb=[1,2,3,5,8]
 i=0
@@ -17,7 +30,6 @@ list_3=liste[20:30]
 list_5=liste[30:40]
 list_8=liste[40:50]
 print(list_3)
-
 
 #2
 liste_1_10=list(range(1,11))
@@ -54,8 +66,14 @@ for cle in dict.keys():
         print(a)
 print(a)
 
-#Ex 5 :
-n = 5
+
+m=[1,2,3,4,5]
+def myfunc_2(a):
+    return a*'*'
+
+print(*list(map(myfunc_2,m)),sep=" ")
+
+print(' '.join(list(map(lambda x : x *'*', range(1,6)))))
 
 # Boucle pour chaque ligne
 for i in range(1, n + 1):
@@ -67,7 +85,6 @@ for i in range(1, n + 1):
 
     
 
-
 #Ex 6 :
 
 L=[5, 4, 3, 2, 1]
@@ -78,6 +95,7 @@ for i in range(lg-1):
         if L[m] > L[j]:   m = j
     L[m], L[i] = L[i], L[m]
 
+'''
 
 #Ex  7:
 
@@ -93,7 +111,6 @@ print(l)
 
 for i in range(1,11):
     print(i*str(1),end='\n')
-
 
 
 
