@@ -18,14 +18,14 @@ else:
 #Exercice 2:
 
 
-a=random.randint(0,30)
-if a >=0 and a <=10:
+rand=random.randint(0,30)
+if rand >=0 and rand <=10:
     print("Cool")
-elif a>10 and a<21:
+elif rand>10 and rand<21:
     print("Tepid")
-elif a>20 and a<31:
+elif rand>20 and rand<31:
     print("warm")
-print(a)
+print(rand)
 
 
 
@@ -53,35 +53,31 @@ match jour:
 
 
 
-#Exercice 4
-a=input("Entrer une valeur : ")
 
-if type(a).__name__=='int':
-    b=int(input("Entrez une valeur entière :"))
-    if b < 50:
-        print(f'A={a}')
-    elif b == 42:
-        print(f'La grande réponse sur la vie, l’univers et le reste ! {b}')
-    elif b > 50:
-        print(f'A={b}')
+#Ex4
+def story_of_the_dwaf_socks() -> None:
+    user_forced_aggreement = input("Do you wish to hear about the dwarf socks?")
+    if user_forced_aggreement:
+        print("It's about the fantastic story about some mithril socks")
+        user_useless_input = input("Guess which material was used to make it?")
+        if user_useless_input.lower() == "mithril":
+            print("smarty pants are ya? Not that only but also some dragon nostril hair !")
+            return
+        
+        print("Are you brain dead ? Mithril obviously ! Now drink with me !")
+        print("The dwarf socks, the dwarf socks it's so good the song is already over")
+        return
+    
+    print("Oya oya, we got some smartass who figured out the response to life, universe and the rest!")
+    print("which is shutting the fuck up!")
+    return
 
-if type(a).__name__=='str':
-    b=str(input("Entrez une chaine de caractère :"))
-    if len(b)<30:
-        print(f'Le mot contient {b} caractères')
-    elif len(b) == 42:
-        print(f'La grande réponse sur la vie, l’univers et le reste ! {b}')
-    elif len(b)== 45 :
-        print(f'Le mot est trop long. {b} caractères...')
+# story_of_the_dwaf_socks()
 
-if type(a).__name__=='float':
-    b=float(input("Entrez un nombre décimale"))
-    if b ==3.14:
-        print(f'Vous vous rapprochez de la bonne réponse')
-    elif b == 42.0:
-        print(f'La grande réponse sur la vie, l’univers et le reste ! {b}')
-    elif b > 50:
-        print(f'A={b}')        
+
+#Ex5
+# wups_im_commented = "haha"
+print(42 if "wups_im_commented" in locals() else "cette variable n'existe pas")
 
 
 #Exercice 6
